@@ -1,0 +1,32 @@
+# aqui o sistema pede o nome do usuário
+nome = input("Digite o seu nome:")
+# aqui o sistema pede o idade do usuário
+idade = int(input("Digite sua idade:"))
+
+# aqui o sistema pede o nome e a idade que o usuário informou
+print(f"bem vindo{nome}, você tem {idade}anos")
+
+# aqui a função que serve como menu
+def menu():
+    print("Como posso te ajudar?")
+    print("1- Bebidas")
+    print("2- Salgados")
+    print("3- Doces")
+
+# aqui grava a opção que o usuário digitou
+opc_user = int(input("Digite o número da opção desejada:"))
+
+# aqui começa a lógica do SE
+if opc_user == 1:
+    print("Temos coca, fanta e guaraná")
+
+elif opc_user == 2:
+    print("Temos coxinha, risoles e empadão")
+
+elif opc_user == 3:
+    print("Temos brigadeiro")
+
+else:
+    print("Opção incorreta digite um número de 1 a 3")
+
+menu()
